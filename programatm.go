@@ -46,7 +46,7 @@ func tariksaldo() {
 	fmt.Print(">> Masukkan jumlah saldo yang ingin ditarik: ")
 	fmt.Scanln(&jumlah)
 	if jumlah > saldo || jumlah < 0 {
-		fmt.Println("Saldo tidak cukup atau saldo dengan angka minus!")
+		fmt.Println("Saldo tidak cukup atau jumlah dengan angka minus!")
 	} else {
 		saldo -= jumlah
 		histori = append(histori, fmt.Sprintf("Tarik: Rp %d", jumlah))
